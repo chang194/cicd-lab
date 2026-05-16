@@ -22,7 +22,7 @@ export function buildApp(options: FastifyServerOptions = {}) {
   return app;
 }
 
-// 新增一個取得版本資訊的函式
-function getVersionInfo(version: number): string {
+// 修正：將參數型別改為 string
+function getVersionInfo(version: string): string {
   return `App version: ${version}`;
 }
