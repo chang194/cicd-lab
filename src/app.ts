@@ -9,7 +9,7 @@ export function buildApp(options: FastifyServerOptions = {}) {
   app.get('/', async () => {
     return {
       message: 'CI/CD Lab Fastify app is running',
-      version: getVersionInfo(process.env.APP_VERSION || 'dev')  // string 傳給 number 參數 → 型別錯誤
+      version: getVersionInfo(process.env.APP_VERSION || 'dev') // string 傳給 number 參數 → 型別錯誤
     };
   });
 
